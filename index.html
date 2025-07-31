@@ -4,169 +4,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dhruvin Katakiya | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/developer.png" />
   <style>
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
-
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f9f9f9;
-      color: #222;
-    }
-
-    header {
-      background: linear-gradient(to right, #00246B, #0051a2);
-      color: white;
-      padding: 60px 20px 40px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0;
-    }
-
-    header h3 {
-      font-weight: 400;
-      margin-top: 10px;
-    }
-
-    .gif {
-      margin-top: 30px;
-      border-radius: 12px;
-      width: 320px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    h2 {
-      color: #00246B;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.05rem;
-      margin: 10px 0;
+      font-family: 'Segoe UI', sans-serif;
       line-height: 1.6;
+      background: #f5f7fa;
+      color: #1e1e1e;
     }
-
-    .divider {
-      height: 2px;
-      background: linear-gradient(to right, #00246B, transparent);
-      width: 80%;
-      margin: 40px auto;
-    }
-
-    .icons img {
-      height: 40px;
-      margin: 8px;
-      transition: transform 0.3s ease;
-    }
-
-    .icons img:hover {
-      transform: scale(1.15);
-    }
-
-    .fun-fact {
-      font-style: italic;
-      color: #444;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    footer {
-      background: #00246B;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .gif {
-        width: 240px;
-      }
-
-      .icons img {
-        height: 32px;
-      }
-    }
-
     a {
-      color: #0051a2;
+      color: #00246B;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      background: #00246B;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    header h1 span {
+      color: #FFD700;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    section {
+      padding: 3rem 0;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    section li {
+      margin-bottom: 0.5rem;
+    }
+    .icons img {
+      margin: 0.3rem;
+      height: 40px;
+    }
+    .social {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #00246B;
+      color: white;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hi 👋, I'm Dhruvin Katakiya</h1>
-    <h3>Software Developer · UI/UX Designer</h3>
-    <img class="gif" src="https://i.pinimg.com/originals/e1/f3/41/e1f3413bf5036045713341394f617225.gif" alt="Coding GIF" />
+    <div class="container">
+      <h1>Hi 👋, I'm <span>Dhruvin Katakiya</span></h1>
+      <p>💻 Software Developer | 🎨 UI/UX Designer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="divider"></div>
-
-  <section>
-    <h2>🚀 About Me</h2>
-    <p>I’m a passionate software developer and UI/UX designer who enjoys creating clean, functional, and interactive digital experiences.</p>
-    <p>Currently building <strong>Hospital Helper</strong>, a smart medical assistant app to streamline patient management.</p>
-    <p>I specialize in <strong>React, Flutter, SCSS, Tailwind CSS</strong>, and modern web tools.</p>
-  </section>
-
-  <div class="divider"></div>
-
-  <section>
-    <h2>🧠 Skills & Tools</h2>
-
-    <h3>Languages & Frameworks</h3>
-    <div class="icons">
-      <img src="https://skillicons.dev/icons?i=html,css,scss,tailwind,js,react,flutter,dart,php,java,cpp,c,python,arduino" />
-    </div>
-
-    <h3>Tools & Platforms</h3>
-    <div class="icons">
-      <img src="https://skillicons.dev/icons?i=git,github,mysql,mongodb,firebase,figma,postman,androidstudio,vscode,aws,docker" />
-      <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.56.0/files/dark/n8n-color.png" alt="n8n" height="40" />
-      <img src="https://img.icons8.com/color/48/canva.png" alt="canva" height="40" />
+  <section id="about">
+    <div class="container">
+      <h2>🚀 About Me</h2>
+      <ul>
+        <li>🔭 Currently working on <strong>Hospital Helper</strong></li>
+        <li>🎯 Specializing in <strong>React, Flutter, UI/UX, SCSS, Tailwind CSS</strong></li>
+        <li>📫 Email: <a href="mailto:dev.dhruvin.0.1@gmail.com">dev.dhruvin.0.1@gmail.com</a></li>
+      </ul>
     </div>
   </section>
 
-  <div class="divider"></div>
+  <section id="skills">
+    <div class="container">
+      <h2>🧠 Skills & Tools</h2>
 
-  <section>
-    <h2>📬 Contact</h2>
-    <p>📧 Email me: <a href="mailto:dev.dhruvin.0.1@gmail.com">dev.dhruvin.0.1@gmail.com</a></p>
-    <p>🔗 Connect on <a href="https://linkedin.com/in/dhruvinkatakiya" target="_blank">LinkedIn</a></p>
+      <h3>Languages & Frameworks</h3>
+      <div class="icons">
+        <img src="https://skillicons.dev/icons?i=html,css,scss,tailwind,js,react,flutter,dart,php,java,cpp,c,python,arduino" alt="Languages" />
+      </div>
+
+      <h3>Dev Tools & Platforms</h3>
+      <div class="icons">
+        <img src="https://skillicons.dev/icons?i=git,github,mysql,mongodb,firebase,figma,postman,androidstudio,vscode,aws,docker" alt="Tools" />
+        <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.56.0/files/dark/n8n-color.png" alt="n8n" width="40" />
+        <img src="https://img.icons8.com/color/48/canva.png" alt="canva" width="40" />
+      </div>
+    </div>
   </section>
 
-  <div class="divider"></div>
-
-  <section>
-    <h2>⚡ Fun Fact</h2>
-    <p class="fun-fact">“I design it, code it, automate it, and ship it.”<br/>Turning ideas into real, interactive products is my happy place 🧠✨</p>
+  <section id="contact">
+    <div class="container">
+      <h2>🌐 Connect with Me</h2>
+      <div class="social">
+        <a href="https://linkedin.com/in/dhruvinkatakiya" target="_blank">LinkedIn</a>
+        <a href="mailto:dev.dhruvin.0.1@gmail.com">Email</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Dhruvin Katakiya · Crafted with care and code
+    <div class="container">
+      <p>© 2025 Dhruvin Katakiya. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
